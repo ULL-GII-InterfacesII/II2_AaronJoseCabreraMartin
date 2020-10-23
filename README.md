@@ -23,17 +23,26 @@ En el apartado 1)c) nos pide añadirle físicas al cubo, para ello, seguiremos el 
 
 Observamos como tanto la esfera como el cubo cae por el efecto de la gravedad
 
-![imagen](/1c.gif)
+![gif](/1c.gif)
 
 
 ## 1)d)
 
 Para añadir masa a la esfera, vamos a la esfera y en su apartado de rigidbody podemos observar que hay un campo llamado mass que por defecto viene a 1 unidad. Para hacer que la esfera tenga 10 veces más masa que el cubo cambiaremos el valor de mass a 10 unidades
 
+![imagen](/1d1.png)
+
 Observamos como tanto la esfera como el cubo caen a la vez por el efecto de la gravedad
 
-![imagen](/1d1.png)
-![imagen](/1d2.gif)
+![gif](/1d2.gif)
 
 También he deformado algo el terreno para observar como colisionan 
-![imagen](/1d3.gif)
+![gif](/1d3.gif)
+
+## 1)e)
+
+Primero para eliminar las físicas del cubo; debemos ir al cubo, buscar su rigidbody y eliminar este componente.
+
+![imagen](/1e1.png)
+
+Luego, en el mismo cubo en la zona de _"Box Collider"_ encontraremos una casilla en la que podremos marcar Is Trigger o no. La dejamos activa.
