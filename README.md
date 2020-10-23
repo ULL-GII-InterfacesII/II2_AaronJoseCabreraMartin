@@ -24,3 +24,16 @@ En el apartado 1)c) nos pide añadirle físicas al cubo, para ello, seguiremos el 
 Observamos como tanto la esfera como el cubo cae por el efecto de la gravedad
 
 ![imagen](/1c.gif)
+
+
+## 1)d)
+
+Para añadir masa a la esfera, vamos a la esfera y en su apartado de rigidbody podemos observar que hay un campo llamado mass que por defecto viene a 1 unidad. Para hacer que la esfera tenga 10 veces más masa que el cubo cambiaremos el valor de mass a 10 unidades
+
+Observamos como tanto la esfera como el cubo caen a la vez por el efecto de la gravedad
+
+![imagen](/1d1.png)
+![imagen](/1d2.gif)
+
+También he deformado algo el terreno para observar como colisionan 
+![imagen](/1d3.gif)
