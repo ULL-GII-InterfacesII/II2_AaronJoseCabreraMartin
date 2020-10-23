@@ -46,3 +46,17 @@ Primero para eliminar las físicas del cubo; debemos ir al cubo, buscar su rigidb
 ![imagen](/1e1.png)
 
 Luego, en el mismo cubo en la zona de _"Box Collider"_ encontraremos una casilla en la que podremos marcar Is Trigger o no. La dejamos activa.
+
+![imagen](/1e2.png)
+
+Si ejecutamos este sería el resultado
+
+![gif](/1e3.gif)
+
+Podemos observar que al cubo no se le aplican las físicas, si el cubo y la esfera entrasen en contacto con una colisión se llamarían a las funciones OnTriggerEnter, OnTriggerExit y OnTriggerStay ya que estarían colisionando un rigidbody y un objeto IsTrigger, estos métodos representan que existe una colisión pero que esta no produce una reacción física.
+
+## 1)f) 
+Para volver a activarle las físicas al cubo seguimos los pasos que mostré anteriormente.
+![gif](/1f1.gif)
+
+Podemos observar que el cubo al llegar al suelo desaparece
