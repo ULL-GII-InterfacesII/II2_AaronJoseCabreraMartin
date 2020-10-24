@@ -66,6 +66,7 @@ Desactivamos el IsTrigger del cubo, comprobamos la masa de la esfera y la dejamo
 
 ![imagen](/1g1.png)
 
+He colocado un plano algo inclinado para provocar que ambos objetos roten.
 Este sería el resultado:
 
 ![gif](/1g2.gif)
