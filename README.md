@@ -59,4 +59,16 @@ Podemos observar que al cubo no se le aplican las físicas, si el cubo y la esfer
 Para volver a activarle las físicas al cubo seguimos los pasos que mostré anteriormente.
 ![gif](/1f1.gif)
 
-Podemos observar que el cubo al llegar al suelo, lo atraviesa y continúa cayendo. He bajado un poco la camara para observar que sigue cayendo incluso al atravesar el suelo. Porque ahora le afecta la gravedad pero no colisiona con otros objetos en el sentido físico sino que los atraviesa y llama a las funciones Trigger mencionadas anteriormente, estas se llaman siempre que un GameObject colisiona con otro GameObject.
+Podemos observar que el cubo al llegar al suelo, lo atraviesa y continúa cayendo. He bajado un poco la cámara para observar que sigue cayendo incluso al atravesar el suelo. Porque ahora le afecta la gravedad pero no colisiona con otros objetos en el sentido físico sino que los atraviesa y llama a las funciones Trigger mencionadas anteriormente, estas se llaman siempre que un GameObject colisiona con otro GameObject.
+
+## 1)g)
+Desactivamos el IsTrigger del cubo, comprobamos la masa de la esfera y la dejamos a 10 unidades ya que el cubo pesa 1, al igual que expliqué en apartados anteriores. Ahora para desactivar la rotación sobre el plano XZ del cubo, vamos hasta la sección de las propiedades de su rigidbody y marcamos las casillas freze-rotation XZ.
+
+![imagen](/1g1.png)
+
+Este sería el resultado:
+
+![gif](/1g2.gif)
+
+Podemos observar que el cubo no rota en el plano XZ pero en el eje Y si, justo al final cuando el cubo llega al suelo y la esfera lo rota ligeramente.
+
