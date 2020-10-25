@@ -73,3 +73,13 @@ Este sería el resultado:
 
 Podemos observar que el cubo no rota en el plano XZ pero en el eje Y si, justo al final cuando el cubo llega al suelo y la esfera lo rota ligeramente.
 
+## 2)a)
+
+Primero creé un GameObject cubo al que llamare _"CubePlayer"_, luego creé un script llamado _"CharacterControllerCube"_. 
+Para conseguir desplazar el cubo con el script tenemos que acceder a su __Transform__ porque este no posee físicas. Si tuviera físicas deberíamos usar su __Rigidbody__ y usar el método _"addforce"_ para no confundir al motor de físicas.
+Para desplazar al cubo simplemente añadiré un atributo privado de tipo Transform y al que llamaré tf_, en el método _Start()_ inicializaré a tf_ con la referencia que devuelve el método **_GetComponent<Transform>()_**, este método nos devolverá una referencia al transform del objeto al que le añadamos este script. Y por último en el método _Update()_ añadiré la siguiente sentencia: `tf_.Translate( Vector3.forward * Time.deltaTime);`
+En la sentencia observamos que accedemos al método Translate y le pasamos un Vector3.forward que quiere decir un vector que apunta a lo que nuestro GameObject tiene enfrente, además ese vector es multiplicado por un escalar, un número, _Time.delteTime_ el cual es desde el frame que nos encontramos, el tiempo que se tarda en generar el siguiente frame. Lo haré así por si se produce una bajada de FPS que se calcule bien la posición en la que debería quedar.
+![imagen](/2a1.png)
+**Muy importante:** no olvidar debemos añadir el script a los componentes del GameObject _"CubePlayer"_ podemos añadirlo simplemente arrastrando el script hasta el nombre del dicho GameObject en la columna de objetos 3D. Sino, nuestro script no será ejecutado.
+![gif](/2a2.gif)
+Podemos observar que el CuboPlayer atraviesa el otro cubo, esto es así porque CuboPlayer no tiene físicas, no es un RigidBody.
