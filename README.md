@@ -100,3 +100,13 @@ Podemos editar el atributo velocity desde el inspector, si por ejemplo le ponemo
 
 ![gif](/2b3.gif)
 
+## 2)c)
+
+Para escuchar que hace el usuario tenemos la clase __Input__. Utilizando el método _"GetKey"_ de esta clase podemos detectar si un usuario está pulsando la tecla concreta que le pasemos.
+Como he decidido que voy a utilizar las flechas de dirección, en Update() situaré 4 sentencias if para detectar que tecla o teclas está pulsando el usuario y desplazar el CubePlayer en consecuencia.
+
+![imagen](/2c1.png)
+
+También he añadido unos Debug.log() para saber que flecha está detectando en cada momento.
+
+![gif](/2c2.gif)

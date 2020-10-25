@@ -18,7 +18,29 @@ public class CharacterControllerCube : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            tf_.Translate( velocity_ * Vector3.forward * Time.deltaTime);
+        if (Input.GetKey("up"))
+        {
+            tf_.Translate(velocity_ * Vector3.forward * Time.deltaTime);
             Debug.Log("up");
+        }
+
+        if (Input.GetKey("down"))
+        {
+            tf_.Translate(velocity_ * Vector3.back * Time.deltaTime);
+            Debug.Log("down");
+        }
+
+        if (Input.GetKey("left"))
+        {
+            tf_.Translate(velocity_ * Vector3.left * Time.deltaTime);
+            Debug.Log("left");
+        }
+
+        if (Input.GetKey("right"))
+        {
+            tf_.Translate(velocity_ * Vector3.right * Time.deltaTime);
+            Debug.Log("right");
+        }
+
     }
 }
