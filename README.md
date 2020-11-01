@@ -110,3 +110,12 @@ Como he decidido que voy a utilizar las flechas de dirección, en Update() situar
 También he añadido unos Debug.log() para saber que flecha está detectando en cada momento.
 
 ![gif](/2c2.gif)
+
+---
+## Ejercicios hechos la siguiente semana
+---
+
+2)d)
+En el ejercicio 2d nos pide que añadamos la posibilidad de rotar al personaje sobre sí mismo para poder girar. Usaré las teclas _"**a**"_ y _"**d**"_ para esto. Simplemente cuando detecte que el jugador las pulsa llamaré al método rotate.
+
+# **FALTA IMAGEN Y GIF DE COMO ROTA**
