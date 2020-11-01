@@ -156,3 +156,15 @@ Como segundo objeto controlable he puesto un cilindro que se controla con las te
 
 En el gif se puede observar como se imprime por pantalla el nombre de los objetos con los que choca la cápsula.
 
+## 3)d)
+
+En el último apartado se nos pide crear unos cubos que aumenten de tamaño cuando cualquier esfera se les acerque y que disminuya cuando el jugador se acerque.
+Para llevar a cabo esto usaré el metodo `LocalScale` del transform.
+Como en el enunciado dice _"esferas"_ he tenido que usar 2 vectores uno para las esferas tipo A y otro para las normales porque recupero estos objetos a través de sus etiquetas.
+
+![imagen](/3d1.png)
+![gif](/3d2.gif)
+En el gif podemos observar que el cubo deja de enconger cuando el jugador se aleja.
+
+![gif](/3d3.gif)
+En el gif podemos observar que el cubo deja de agrandarse cuando la esfera se aleja.
