@@ -112,10 +112,29 @@ También he añadido unos Debug.log() para saber que flecha está detectando en cad
 ![gif](/2c2.gif)
 
 ---
-## Ejercicios hechos la siguiente semana
+# Ejercicios hechos la siguiente semana
 ---
 
-2)d)
+## 2)d)
 En el ejercicio 2d nos pide que añadamos la posibilidad de rotar al personaje sobre sí mismo para poder girar. Usaré las teclas _"**a**"_ y _"**d**"_ para esto. Simplemente cuando detecte que el jugador las pulsa llamaré al método rotate.
 
-# **FALTA IMAGEN Y GIF DE COMO ROTA**
+![imagen](/2d1.png)
+![gif](/2d2.gif)
+
+## 3)a)
+En este apartado se nos pide crear varias esferas. **Todas** las esferas deben cambiar de color cada vez que entren en contacto con el jugador. Además si se trata de una **esfera de tipo A** si mientras el jugador están en contacto se pulsa la barra espaciadora el jugador la impulsa hacia fuera de él.
+
+Inicialmente, lo haré con una esfera normal y con una esfera tipo A para programar su comportamiento. Ya que, una vez tenga sus scripts simplemente habrá que crear nuevas esferas y añadirles el script.
+
+Para detectar la colisión entre una esfera y el cubo jugador debemos usar la función `OnTriggerEnter` la cual recibe un _Collider_. Lo primero que hago es comprobar que ese collider tiene la etiqueta **_Player_** y si es así accedo al _Render_ para cambiar el color del material. Este script lo llevarán **todas** las esferas.
+
+![imagen](/3a1.png)
+![gif](/3a2.gif)
+
+Para la parte de impulsar hacia fuera del jugador las esferas del tipo A me pareció más adecuado añadir un `OnTriggerStay` en el script que controla el cubo judador. Simplemente si detectamos una colisión continuada (Stay) tipo trigger, el objeto contra el que colisionamos tiene la etiqueta _"EsferasA"_ y el jugador esta pulsando la tecla espacio, le aplicamos una fuerza tipo Explosión al otro objeto.
+
+![imagen](/3a3.png)
+![gif](/3a4.gif)
+En el gif podemos observar que la primera esfera, que es de tipo A al pulsar el espacio sale volando pero la segunda esfera que no es de tipo A no ocurre nada al pulsar el espacio.
+
+
