@@ -137,4 +137,16 @@ Para la parte de impulsar hacia fuera del jugador las esferas del tipo A me pare
 ![gif](/3a4.gif)
 En el gif podemos observar que la primera esfera, que es de tipo A al pulsar el espacio sale volando pero la segunda esfera que no es de tipo A no ocurre nada al pulsar el espacio.
 
+He añadido además que se eliga un color aleatorio cada vez que el jugador entra en contacto con una esfera, para que no siempre sea amarillo.
+
+## 3)b)
+
+A las esferas les he colocado un rigidbody para que respondan a la física.
+Para los cilindros he creado un script llamado Runaway que básicamente calcula la distancia entre el jugador y el cilindro y si esta es menor que cierto valor *"distanciaMinima_"* aplica una fuerza proporcional a la distancia y en dirección al jugador.
+
+![imagen](/3b1.png)
+![gif](/3b2.gif)
+
+
+
 

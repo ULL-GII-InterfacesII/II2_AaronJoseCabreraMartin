@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Security.Cryptography;
@@ -23,8 +24,8 @@ public class Sphere : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("Amarillo!!");
-            GetComponent<Renderer>().material.color = Color.yellow;
+            //                                                          R                                   G                                B                            alpha
+            GetComponent<Renderer>().material.color = new Color(UnityEngine.Random.Range(0F,1F), UnityEngine.Random.Range(0F, 1F), UnityEngine.Random.Range(0F, 1F), UnityEngine.Random.Range(0F, 1F));
         }
     }
 }
