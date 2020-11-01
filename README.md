@@ -147,6 +147,12 @@ Para los cilindros he creado un script llamado Runaway que básicamente calcula l
 ![imagen](/3b1.png)
 ![gif](/3b2.gif)
 
+## 3)c)
 
+Como segundo objeto controlable he puesto un cilindro que se controla con las teclas I, J, L y M. Para detectar los dos tipos de colisiones he puesto dos métodos `OnCollisionEnter` y `OnTriggerEnter`.
 
+![imagen](/3c1.png)
+![gif](/3c2.gif)
+
+En el gif se puede observar como se imprime por pantalla el nombre de los objetos con los que choca la cápsula.
 
