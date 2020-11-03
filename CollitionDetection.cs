@@ -39,11 +39,31 @@ public class CollitionDetection : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Collision trigger with " + other.gameObject.name);
+        Debug.Log("OnTriggerEnter with " + other.gameObject.name);
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        Debug.Log("OnTriggerStay with " + other.gameObject.name);
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        Debug.Log("OnTriggerExit with " + other.gameObject.name);
     }
 
     void OnCollisionEnter(Collision other)
     {
-        Debug.Log("Collision with " + other.gameObject.name);
+        Debug.Log("OnCollisionEnter with " + other.gameObject.name);
+    }
+
+    void OnCollisionStay(Collision other)
+    {
+        Debug.Log("OnCollisionStay with " + other.gameObject.name);
+    }
+
+    void OnCollisionExit(Collision other)
+    {
+        Debug.Log("OnCollisionExit with " + other.gameObject.name);
     }
 }

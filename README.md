@@ -149,7 +149,18 @@ Para los cilindros he creado un script llamado Runaway que básicamente calcula l
 
 ## 3)c)
 
-Como segundo objeto controlable he puesto un cilindro que se controla con las teclas I, J, L y M. Para detectar los dos tipos de colisiones he puesto dos métodos `OnCollisionEnter` y `OnTriggerEnter`.
+Como segundo objeto controlable he puesto un cilindro que se controla con las teclas I, J, L y M. 
+Para detectar los dos tipos de colisiones he puesto los 3 métodos de los dos tipos de colisiones:
+
+1. Las colisiones físicas: 
+	- `OnCollisionEnter`
+	- `OnCollisionStay` 
+	- `OnCollisionExit` 
+
+2. Las trigger: 
+	- `OnTriggerEnter`
+	- `OnTriggerStay`
+	- `OnTriggerExit`
 
 ![imagen](/3c1.png)
 ![gif](/3c2.gif)
